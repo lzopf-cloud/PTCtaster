@@ -13,6 +13,7 @@
 </style>
 <style>
 .support{background:#edf4e9}.support .support-intro{max-width:700px}.support-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:1.5rem;margin-top:2rem}.support-card{padding:1.35rem;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--amber)}.support-card h3{margin-top:0}.support-card ul{padding-left:1.3rem}.support-card li{margin:.55rem 0}.support-card strong{color:var(--rust)}.support-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-top:1.25rem}.support-step{position:relative;padding:1rem .7rem .85rem;background:var(--mint);text-align:center}.support-step:not(:last-child)::after{content:"→";position:absolute;right:-.62rem;top:calc(50% - .8rem);z-index:1;color:var(--rust);font-weight:700}.support-step b{display:block;color:var(--deep);font:700 1.2rem "Fraunces",serif}.support-step span{display:block;margin-top:.35rem;font-size:.9rem}.check{margin-top:1.5rem;padding:1.1rem;background:var(--deep);color:#f4efe4}.check h3{color:#f4efe4}.check button{margin:.4rem .4rem 0 0;padding:.5rem .75rem;border:1px solid #e8b45d;background:transparent;color:#f4efe4;cursor:pointer;font:600 .85rem "IBM Plex Mono",monospace}.check button:hover,.check button[aria-pressed=true]{background:#e8b45d;color:var(--deep)}.check-answer{display:none;margin:.8rem 0 0;color:#e8b45d}.check-answer.visible{display:block}@media(max-width:700px){.support-grid{grid-template-columns:1fr}.support-flow{grid-template-columns:1fr 1fr}.support-step:not(:last-child)::after{content:"↓";right:auto;top:auto;bottom:-.8rem;left:calc(50% - .35rem)}.support-step:nth-child(2)::after{display:none}}
+.source-image{display:block;width:100%;height:auto;background:var(--mint)}
 .plates{background:#f7f3e9}.plate-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem}.plate{margin:0;padding:1.25rem;background:var(--paper);border:1px solid var(--line)}.plate h3{margin-top:0}.plate svg{display:block;width:100%;height:auto;background:var(--mint)}.plate figcaption{margin-top:1rem;color:var(--muted);font-size:.95rem}.plate text{font:13px "IBM Plex Mono",monospace;fill:var(--deep)}.plate .chromosome{fill:none;stroke:var(--green);stroke-linecap:round;stroke-width:14}.plate .gene-marker{fill:var(--amber);stroke:var(--deep);stroke-width:2}.plate .protein{fill:var(--mint);stroke:var(--green);stroke-width:4}.plate .protein-alt{fill:#f8e0c1;stroke:var(--rust);stroke-width:4}.plate .molecule{fill:var(--amber);stroke:var(--deep);stroke-width:2}@media(max-width:700px){.plate-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -60,6 +61,11 @@
 <text x="245" y="91">strong signal</text><text x="505" y="91">weak signal</text>
 </svg>
 <figcaption><strong>Teaching diagram:</strong> the amino-acid changes do not replace the whole protein. They subtly change its shape, which can change how well PTC binds.</figcaption>
+</figure>
+<figure class="plate">
+<h3>How a receptor detects a molecule</h3>
+<img class="source-image" src="images/membrane-receptor.png" width="550" height="195" alt="A receptor protein in a cell membrane. One receptor has a chemical molecule inside its binding groove, showing how a molecule can fit into a receptor." loading="lazy">
+<figcaption><strong>Source image:</strong> LibreTexts shows a molecule fitting into a membrane receptor. Used under the page's <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0 license</a>. <a href="https://bio.libretexts.org/Bookshelves/Biotechnology/Lab_Manual%3A_Introduction_to_Biotechnology/01%3A_Techniques/1.16%3A_A_Taste_of_Genetics_-_PTC_Taster" target="_blank" rel="noopener">View the original lab page</a>.</figcaption>
 </figure>
 </div>
 </div>
