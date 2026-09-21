@@ -13,7 +13,7 @@
 </style>
 <style>
 .support{background:#edf4e9}.support .support-intro{max-width:700px}.support-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:1.5rem;margin-top:2rem}.support-card{padding:1.35rem;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--amber)}.support-card h3{margin-top:0}.support-card ul{padding-left:1.3rem}.support-card li{margin:.55rem 0}.support-card strong{color:var(--rust)}.support-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-top:1.25rem}.support-step{position:relative;padding:1rem .7rem .85rem;background:var(--mint);text-align:center}.support-step:not(:last-child)::after{content:"→";position:absolute;right:-.62rem;top:calc(50% - .8rem);z-index:1;color:var(--rust);font-weight:700}.support-step b{display:block;color:var(--deep);font:700 1.2rem "Fraunces",serif}.support-step span{display:block;margin-top:.35rem;font-size:.9rem}.check{margin-top:1.5rem;padding:1.1rem;background:var(--deep);color:#f4efe4}.check h3{color:#f4efe4}.check button{margin:.4rem .4rem 0 0;padding:.5rem .75rem;border:1px solid #e8b45d;background:transparent;color:#f4efe4;cursor:pointer;font:600 .85rem "IBM Plex Mono",monospace}.check button:hover,.check button[aria-pressed=true]{background:#e8b45d;color:var(--deep)}.check-answer{display:none;margin:.8rem 0 0;color:#e8b45d}.check-answer.visible{display:block}@media(max-width:700px){.support-grid{grid-template-columns:1fr}.support-flow{grid-template-columns:1fr 1fr}.support-step:not(:last-child)::after{content:"↓";right:auto;top:auto;bottom:-.8rem;left:calc(50% - .35rem)}.support-step:nth-child(2)::after{display:none}}
-.source-image{display:block;width:100%;height:auto;background:var(--mint)}
+.source-image{display:block;width:100%;height:auto;background:var(--mint)}.plate .centromere{fill:var(--rust);stroke:var(--deep);stroke-width:2}
 .plates{background:#f7f3e9}.plate-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem}.plate{margin:0;padding:1.25rem;background:var(--paper);border:1px solid var(--line)}.plate h3{margin-top:0}.plate svg{display:block;width:100%;height:auto;background:var(--mint)}.plate figcaption{margin-top:1rem;color:var(--muted);font-size:.95rem}.plate text{font:13px "IBM Plex Mono",monospace;fill:var(--deep)}.plate .chromosome{fill:none;stroke:var(--green);stroke-linecap:round;stroke-width:14}.plate .gene-marker{fill:var(--amber);stroke:var(--deep);stroke-width:2}.plate .protein{fill:var(--mint);stroke:var(--green);stroke-width:4}.plate .protein-alt{fill:#f8e0c1;stroke:var(--rust);stroke-width:4}.plate .molecule{fill:var(--amber);stroke:var(--deep);stroke-width:2}@media(max-width:700px){.plate-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -50,10 +50,11 @@
 <svg viewBox="0 0 640 230" role="img" aria-labelledby="chromosome-plate-title chromosome-plate-desc">
 <title id="chromosome-plate-title">Schematic of chromosome 7 and the TAS2R38 gene</title>
 <desc id="chromosome-plate-desc">A stylized chromosome 7 is shown with a highlighted marker locating the TAS2R38 gene. This is a teaching diagram, not a photograph.</desc>
-<path class="chromosome" d="M205 42 C145 72 145 158 205 188 M205 42 C265 72 265 158 205 188 M205 42 L205 188"/>
-<circle class="gene-marker" cx="205" cy="112" r="19"/>
-<path d="M225 112 H420" stroke="#aa4f39" stroke-width="3" stroke-dasharray="7 8"/>
-<text x="154" y="218">chromosome 7</text><text x="425" y="105">TAS2R38</text><text x="425" y="132">gene location</text>
+<path class="chromosome" d="M170 34 L225 112 L170 190 M240 34 L185 112 L240 190"/>
+<circle class="centromere" cx="207" cy="112" r="15"/>
+<circle class="gene-marker" cx="184" cy="55" r="11"/>
+<path d="M195 55 H420" stroke="#aa4f39" stroke-width="3" stroke-dasharray="7 8"/>
+<text x="145" y="218">chromosome 7</text><text x="425" y="48">TAS2R38</text><text x="425" y="75">gene location</text><text x="168" y="108">p arm</text><text x="250" y="108">q arm</text>
 </svg>
 <figcaption><strong>Teaching diagram:</strong> TAS2R38 is located on chromosome 7. A chromosome image from a microscope would show many genes; this simplified view highlights the location students need for this lab.</figcaption>
 </figure>
